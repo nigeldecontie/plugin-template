@@ -1,0 +1,70 @@
+/* Custom login page styles */
+#login h1 a, .login h1 a {
+    background-image: url('../logo.png');
+    height: 120px; 
+    width: 100%; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 30px; 
+}
+
+body.login #login {
+    width: 420px;
+}
+
+body.login #login .message,
+body.login #login #login_error {
+    margin: 0 24px;
+}
+
+/* Customize WordPress login, registration, and forgot password pages */
+body.login {
+    background-color: #ffffff; /* Set background color to white */
+}
+
+/* Remove the box around the forms */
+body.login form#loginform,
+body.login form#registerform,
+body.login form#lostpasswordform {
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
+}
+
+/* Style the form fields */
+body.login form#loginform p,
+body.login form#registerform p,
+body.login form#lostpasswordform p {
+    margin-bottom: 15px; /* Add spacing between form fields */
+}
+
+/* Style the input fields */
+body.login form#loginform input[type="text"],
+body.login form#loginform input[type="password"],
+body.login form#registerform input[type="text"],
+body.login form#registerform input[type="email"],
+body.login form#registerform input[type="password"],
+body.login form#lostpasswordform input[type="text"] {
+    background-color: #fff; /* Set input background color */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 4px; /* Add border radius */
+    padding: 12px; /* Increase padding to make inputs wider */
+    width: 100%; /* Make inputs 100% width of the container */
+}
+
+/* Style the buttons */
+body.login form#loginform input#wp-submit,
+body.login form#registerform input#wp-submit,
+body.login form#lostpasswordform input#wp-submit {
+    background-color: #000000; /* Set button background color */
+    color: #ffffff; /* Set button text color */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Add button border radius */
+    padding: 10px 20px; /* Add padding to the button */
+}
+
+/* Style the buttons on hover */
+body.login form#loginform input#wp-submit:hover,
+body.login form#registerform input#wp-submit:hover,
+body.login form#lostpasswordform input#wp-submit:hover {
+    background-color: #222222; /* Change button background color on hover */
+}
