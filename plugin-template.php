@@ -11,11 +11,11 @@ if (!defined('ABSPATH')) {
 }
 
 // Constants
-define('CUSTOM_AUTH_ROOT_DIR', plugin_dir_path(__FILE__));    // for including or requiring files
-define('CUSTOM_AUTH_PLUGIN_URL', plugins_url('/', __FILE__)); // for enqueuing assets
+define('TEMPLATE_ROOT_DIR', plugin_dir_path(__FILE__));    // for including or requiring files
+define('TEMPLATE_PLUGIN_URL', plugins_url('/', __FILE__)); // for enqueuing assets
 
 // Enqueue scripts
-$files = glob(CUSTOM_AUTH_ROOT_DIR . 'enqueue/*.php');
+$files = glob(TEMPLATE_ROOT_DIR . 'enqueue/*.php');
 
 if ($files !== false) {
     foreach ($files as $file) {
